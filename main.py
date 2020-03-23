@@ -13,6 +13,11 @@ def help(update, context):
     update.message.reply_text('123')
 
 
+def echo(update, context):
+    update.message.reply_text('123')
+
+
+
 def main():
     updater = Updater(TOKEN, use_context=True)
     text_handler = MessageHandler(Filters.text, echo)
